@@ -11,7 +11,7 @@ date_input2 = input("Please enter the birthdate of the person you wish to see th
 
 
 #cast to a datetime object
-date_object1 = datetime.strptime(date_input1, '%d %b %Y')
+date_object1 = datetime = datetime.strptime(date_input1, '%d %b %Y')
 date_object2 = datetime.strptime(date_input2, '%d %b %Y')
 
 #Challenge one calculation
