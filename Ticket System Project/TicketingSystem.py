@@ -2,9 +2,6 @@
 # Author: Helen Thomas
 # Date: 24.08.2023
 
-# This version did not allow me to use options 3, 4, 5, as I had applied "Pass"
-# I will edit in Pycharm and then import a better working version
-
 class Ticket:
     def __init__(self, ticket_number, creator_name, staff_id, email, description):
         self.ticket_number = ticket_number
@@ -104,15 +101,27 @@ if __name__ == "__main__":
 
         elif choice == "2":
             # Resolve Ticket
-            pass
+            ticket_number = int(input("Enter the ticket number to resolve: "))
+            for ticket in main.tickets:
+                if ticket.ticket_number == ticket_number:
+                    main.resolve_ticket(ticket)
+                    print(f"Ticket {ticket.ticket_number} resolved successfully!")
 
         elif choice == "3":
             # Provide Response
-            pass
+            ticket_number = int(input("Enter the ticket number to provide a response: "))
+            for ticket in main.tickets:
+                if ticket.ticket_number == ticket_number:
+                    main.provide_response(ticket)
+                    print(f"Response provided for Ticket {ticket.ticket_number}!")
 
         elif choice == "4":
             # Reopen Ticket
-            pass
+            ticket_number = int(input("Enter the ticket number to reopen: "))
+            for ticket in main.tickets:
+                if ticket.ticket_number == ticket_number:
+                    main.reopen_ticket(ticket)
+                    print(f"Ticket {ticket.ticket_number} reopened successfully!")
 
         elif choice == "5":
             main.display_tickets()
@@ -126,3 +135,4 @@ if __name__ == "__main__":
 
         else:
             print("Invalid choice. Please choose a valid option.")
+            
