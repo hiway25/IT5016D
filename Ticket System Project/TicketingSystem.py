@@ -2,6 +2,9 @@
 # Author: Helen Thomas
 # Date: 24.08.2023
 
+# This version did not allow me to use options 3, 4, 5, as I had applied "Pass"
+# I will edit in Pycharm and then import a better working version
+
 class Ticket:
     def __init__(self, ticket_number, creator_name, staff_id, email, description):
         self.ticket_number = ticket_number
