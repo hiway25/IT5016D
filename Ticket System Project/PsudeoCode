@@ -1,0 +1,83 @@
+# Pseudocode for Help Desk Ticketing System
+
+# Define a Ticket class
+class Ticket:
+    function __init__(ticket_number, creator_name, staff_id, email, description):
+        Initialize ticket attributes
+        Set status to "Open"
+        If description contains "password change":
+            Generate a new password and mark the ticket as "Closed"
+        Else:
+            Set response to "Not Yet Provided"
+
+    function generate_password():
+        If description contains "password change" and status is not "Closed":
+            Generate a new password and mark the ticket as "Closed"
+
+    function provide_response(response):
+        If description contains "password change":
+            If status is not "Closed":
+                Generate a new password
+            Else:
+                Update the response with the provided response
+        Else:
+            Update the response with the provided response
+        Mark the ticket as "Closed"
+
+    function reopen_ticket():
+        Mark the ticket as "Reopened"
+
+    function __str__():
+        Return formatted ticket information
+
+    static function TicketStats(tickets):
+        Calculate and return ticket statistics
+
+# Define a Main class
+class Main:
+    function __init__():
+        Initialize an empty list of tickets
+
+    function create_ticket():
+        Prompt for user input and create a new ticket
+        Add the new ticket to the list
+
+    function resolve_ticket(ticket):
+        Call the generate_password method on the ticket
+
+    function provide_response(ticket):
+        Prompt for user input and call provide_response on the ticket
+
+    function reopen_ticket(ticket):
+        Call reopen_ticket on the ticket
+
+    function display_tickets():
+        Iterate through the list of tickets and print each ticket's details
+
+    function display_statistics():
+        Calculate and display ticket statistics
+
+# Main program
+if __name__ == "__main__":
+    Create an instance of the Main class
+    Start a loop:
+        Display a menu with options
+        Prompt for the user's choice
+        If choice is "1":
+            Call create_ticket() and print a success message
+        Else if choice is "2":
+            Prompt for a ticket number and call resolve_ticket()
+        Else if choice is "3":
+            Prompt for a ticket number and call provide_response()
+        Else if choice is "4":
+            Prompt for a ticket number and call reopen_ticket()
+        Else if choice is "5":
+            Call display_tickets()
+        Else if choice is "6":
+            Call display_statistics()
+        Else if choice is "0":
+            Exit the loop
+        Else:
+            Print an error message for an invalid choice
+
+    Print "Exiting..."
