@@ -15,9 +15,8 @@ Run the Program:
 
 In the terminal or command prompt, execute the Python script by entering the following command:
 
-bash
-Copy code
 python TicketingSystem.py
+
 Use the Ticketing System:
 
 Once the program is running, you'll see a menu of options displayed in the terminal. You can interact with the system by entering the corresponding option number and following the on-screen prompts.
