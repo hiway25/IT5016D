@@ -1,2 +1,53 @@
-I am going to place things in here I have worked on for the assignment.
-I will also place code I have trialled, and looked to for assistance.
+# Ticketing System
+
+Author: Helen Thomas  
+Date: 24.08.2023
+
+## Introduction
+
+This is a simple command-line ticketing system implemented in Python. It allows users to create support tickets, resolve them, provide responses, reopen tickets, and view ticket statistics. The system is designed to handle help desk requests, with a focus on password change requests.
+
+## Ticket Class
+
+The `Ticket` class represents an individual support ticket. It has the following attributes:
+
+- `ticket_number`: A unique identifier for each ticket.
+- `creator_name`: The name of the person who created the ticket.
+- `staff_id`: The staff ID of the person who created the ticket.
+- `email`: The contact email of the person who created the ticket.
+- `description`: A description of the issue or request.
+- `status`: The status of the ticket (Open, Closed, or Reopened).
+- `response`: The response provided for the ticket.
+
+The class also includes methods for generating passwords, providing responses, and reopening tickets, depending on the type of request.
+
+## Main Class
+
+The `Main` class represents the main application logic. It includes the following functions:
+
+- `create_ticket`: Allows users to create a new ticket by providing necessary information.
+- `resolve_ticket`: Marks a ticket as resolved, generating a password if it's a password change request.
+- `provide_response`: Provides a response to a ticket, updating its status.
+- `reopen_ticket`: Reopens a closed ticket.
+- `display_tickets`: Displays all tickets and their details.
+- `display_statistics`: Displays ticket statistics, including the number of created, resolved, and open tickets.
+
+## Usage
+
+To use the ticketing system, run the `TicketingSystem.py` script. You will be presented with a menu with the following options:
+
+1. Create Ticket: Create a new support ticket.
+2. Resolve Ticket: Mark a ticket as resolved (for password change requests).
+3. Provide Response: Provide a response to a ticket.
+4. Reopen Ticket: Reopen a closed ticket.
+5. Display Tickets: View all ticket details.
+6. Display Statistics: View ticket statistics.
+0. Exit: Quit the application.
+
+Follow the on-screen prompts to interact with the system. You can create, resolve, provide responses to, and reopen tickets as needed. The system will display ticket details and statistics upon request.
+
+Enjoy using the Help Desk Ticketing System!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
