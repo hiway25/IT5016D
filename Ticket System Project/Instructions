@@ -1,0 +1,45 @@
+To display and run your software project, which is the Help Desk Ticketing System in Python, follow these instructions:
+
+Prerequisites:
+
+Ensure you have Python installed on your computer. You can download Python from the official website: Python Downloads.
+Steps:
+
+Download the Code:
+
+Download the TicketingSystem.py file if you haven't already. You can save it to your preferred directory.
+Open a Terminal or Command Prompt:
+
+Navigate to the directory where you saved the TicketingSystem.py file using the terminal or command prompt. You can use the cd command to change directories.
+Run the Program:
+
+In the terminal or command prompt, execute the Python script by entering the following command:
+
+bash
+Copy code
+python TicketingSystem.py
+Use the Ticketing System:
+
+Once the program is running, you'll see a menu of options displayed in the terminal. You can interact with the system by entering the corresponding option number and following the on-screen prompts.
+Here are the available options:
+Create Ticket
+Resolve Ticket
+Provide Response
+Reopen Ticket
+Display Tickets
+Display Statistics
+Exit
+Interact with the Program:
+
+Depending on your choice, you can create tickets, resolve them, provide responses, reopen tickets, view ticket details, and check ticket statistics.
+Follow the prompts and enter the required information as prompted by the program.
+Exit the Program:
+
+When you are finished using the ticketing system, you can exit the program by selecting the "Exit" option from the menu.
+Review Output:
+
+The program will provide feedback and display ticket information as you interact with it. Be sure to check the output in the terminal to see the results of your actions.
+Modification and Customization (Optional):
+
+If you want to modify or extend the functionality of the program, you can edit the TicketingSystem.py file using a text editor or integrated development environment (IDE).
+That's it! You can now display and interact with the Help Desk Ticketing System by running the Python script. The program provides a basic command-line interface for managing support tickets.
